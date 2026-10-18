@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>EVS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0066cc">
+<meta name="color-scheme" content="light dark">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="EVS">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="icons/icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top no-print"><span class="logo">EVS</span><span id="top-sub"></span></header>
+<main id="view"></main>
+<nav class="tabs no-print" id="tabs" aria-label="Navigation">
+  <button data-tab="planning"><i>📅</i>Planning</button>
+  <button data-tab="mensuel"><i>📊</i>Mensuel</button>
+  <button data-tab="annuel"><i>📈</i>Annuel</button>
+  <button data-tab="verif"><i>✅</i>Vérif</button>
+  <button data-tab="agent"><i>👤</i>Agent</button>
+</nav>
+<div id="modal" class="modal" hidden></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<input type="file" id="file" accept=".csv,.json,text/csv,application/json,text/plain" hidden>
+<script src="calc.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+EVS — version web (PWA) pour iPhone, iPad, Android et Windows
+================================================================
+
+MISE EN LIGNE (GitHub Pages, gratuit, environ 10 minutes)
+---------------------------------------------------------
+1. Créer un compte sur github.com, puis un nouveau dépôt PUBLIC.
+   Choisir un nom neutre (ex. "evs") : il apparaît dans l'adresse.
+   Le dépôt ne contient AUCUNE donnée personnelle, seulement le code.
+2. Dans le dépôt : "Add file" > "Upload files". Glisser le CONTENU de ce
+   dossier (index.html, app.js, calc.js, style.css, sw.js, manifest.webmanifest
+   et le dossier icons), puis "Commit changes".
+3. "Settings" > "Pages" > Source : "Deploy from a branch" > branche "main",
+   dossier "/ (root)" > Save. Après 1 à 2 minutes, l'adresse est :
+       https://VOTRE-IDENTIFIANT.github.io/evs/
+4. Envoyer ce lien aux collègues.
+
+INSTALLATION
+------------
+- iPhone / iPad : ouvrir le lien dans SAFARI > bouton Partager >
+  "Sur l'écran d'accueil". (Chrome sur iOS ne permet pas l'installation.)
+- Android : menu du navigateur > "Installer l'application".
+- Windows : Edge ou Chrome > icône "Installer" dans la barre d'adresse.
+
+DONNÉES ET CONFIDENTIALITÉ
+--------------------------
+- Tout est stocké sur l'appareil, dans l'appli. Rien n'est envoyé nulle part.
+- Safari peut effacer les données d'un site peu utilisé : installer l'appli sur
+  l'écran d'accueil limite ce risque, mais fait aussi une sauvegarde régulière
+  (onglet Agent > Sauvegarde complète). Le fichier JSON contient le salaire :
+  le garder en lieu sûr.
+- Les sections 🔒 se referment toutes seules quand l'appli passe en arrière-plan.
+
+METTRE À JOUR L'APPLI
+---------------------
+Remplacer les fichiers dans le dépôt, et changer VERSION dans sw.js
+(ex. 'evs-v1' devient 'evs-v2'), sinon les appareils gardent l'ancienne version.
+
+À TESTER EN PREMIER
+-------------------
+Ouvrir le lien sur un appareil professionnel : si le filtrage SNCF bloque
+github.io, essayer Cloudflare Pages ou Netlify (même principe, aussi gratuits).
